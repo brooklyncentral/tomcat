@@ -1,0 +1,18 @@
+brooklyn.catalog:
+  id: tomcat
+  version: 0.1
+  itemType: template
+  iconUrl: http://tomcat.apache.org/images/tomcat-power.gif
+  name: Tomcat
+  description: |
+    Apache Tomcat is an open source software implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies.
+  overview: README.md
+  license_code: Apache-2.0
+  license_url: http://www.apache.org/licenses/LICENSE-2.0.txt
+  maintainer_name: Cloudsoft Corporation
+  maintainer_email: info@cloudsoft.io
+  issues_url: https://issues.apache.org/jira/browse/BROOKLYN
+  qa: catalog.tests.bom
+  item: 
+    services:
+    - type: org.apache.brooklyn.entity.webapp.tomcat.TomcatServer
